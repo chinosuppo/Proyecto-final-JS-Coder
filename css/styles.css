@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearflix{
+    float: none;
+    clear: both;
+}
+
+body{
+    background: url('../img/fondo.jpg');
+    background-attachment: fixed;
+}
+
+#global{
+    width: 65%;
+    margin: 0px auto;
+    margin-top: 30px;
+    background: white;
+    box-shadow: 0px 0px 2px #ccc;
+}
+
+#logo{
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 25px;
+    letter-spacing: 4px;
+    line-height: 75px;
+    background-color: #235e3d;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+    float: left;
+    text-transform: uppercase;
+}
+
+#menu{
+    font-family: Helvetica, Arial, Impact;
+    background: #333;
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#menu ul{
+    line-height: 46px;
+    list-style: none;
+}
+
+#menu ul li {
+    /* height: 46px; */
+    display: inline-block;
+    transition: all 300ms;
+}
+
+#menu ul li:hover{
+    background:#235e3d;
+}
+
+#menu a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#articulos{
+    width: 60%;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.post{
+    padding: 7px;
+}
+
+.post h2{
+    font-size: 24px;
+    color: #333;
+}
+
+.post .fecha{
+    display: block;
+    color:gray;
+    margin-top: 5px;
+}
+
+.post p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+.boton-leer{
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    padding: 15px;
+    background: #235e3d;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    width: 90px;
+    float: auto;
+    margin-bottom: 20px;
+}
+
+#aside{
+    font-family: Helvetica, Arial, Georgia;
+    width: 31%;
+    float: right;
+    margin-right: 20px;
+}
+
+#aside h4{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 10px;
+    color: #333;
+}
+
+#aside img{
+    width: 100%;
+}
+
+#aside p{
+    font-size: 14px;
+    text-align: justify;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"]{
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    /* box-shadow: 0px 0px 2px gray; */
+}
+
+form input[type="submit"]{
+    background-color: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+}
+
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    height: 47px;
+    background: rgba(51, 51, 51, 0.70);
+    margin: 0 auto;
+    width: 65%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+    line-height: 47px;
+}
