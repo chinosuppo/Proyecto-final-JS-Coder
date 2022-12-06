@@ -16,15 +16,13 @@
             crossorigin="anonymous" />
 
         <!-- importacion JQuery -->
-        <script src="./js/jquery-3.6.1.min.js"></script>
+        <script src="./js/resources/jquery-3.6.1.min.js"></script>
 
         <!-- importacion moments JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/locale/es.min.js"></script>
 
-        <!-- importacion mis scripts -->
-        <script src="./js/main.js"></script>
         <title>Proyecto final CoderHouse - JS</title>
     </head>
     <body>
@@ -39,9 +37,9 @@
 
                 <nav id="menu">
                     <ul>
-                        <li><a href="#">Inicio</a></li>
+                        <li><a href="index.html">Inicio</a></li>
                         <li><a href="#">Reloj</a></li>
-                        <li><a href="#">Sobre mi</a></li>
+                        <li><a href="./paginas/sobreCachi.html">Sobre mi</a></li>
                         <li><a href="#">Contacto</a></li>
                         <li><a href="#">Como llegar</a></li>
                     </ul>
@@ -109,28 +107,25 @@
 
                 <aside id="aside">
                     <div id="about">
-                        <h4>Cachi</h4>
+                        <h4>Cabrito de la zona</h4>
                         <img src="./img/imagen_aside.jpg" alt="cachi" />
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Sapiente quae aliquid optio beatae possimus labore,
-                            commodi autem maiores fuga? Possimus officiis voluptates
-                            blanditiis deleniti non dolorum iure earum. Aspernatur,
-                            saepe!
-                        </p>
+                        <p></p>
                     </div>
 
                     <div id="login">
                         <h4>Iniciar sesión</h4>
                         <form action="">
                             <label for="name">Nombre</label>
-                            <input type="text" name="name" />
+                            <input type="text" name="name" id="form_nombre" />
 
                             <label for="email">Correo Electronico</label>
-                            <input type="email" name="email" />
+                            <input type="email" name="email" id="form_mail" />
 
-                            <label for="contraseña">Contraseña</label>
-                            <input type="password" name="contraseña" />
+                            <label for="contrasena">Contraseña</label>
+                            <input
+                                type="password"
+                                name="contrasena"
+                                id="form_contrasena" />
 
                             <input type="submit" value="Entrar" />
                         </form>
@@ -141,7 +136,13 @@
             </section>
         </section>
 
-        <footer>Proyecto final mio</footer>
+        <footer>
+            Proyecto final mio
+            <a href="#" class="subir">Ir arriba</a>
+        </footer>
+
+        <!-- importacion mis scripts -->
+        <script src="./js/main.js"></script>
 
         <!-- importacion JS Bootstrap -->
         <script
