@@ -88,9 +88,20 @@ $(document).ready(function(){
             location.reload();
         });
     }
-
+    
+    // acordeon con JQuery UI
     if(window.location.href.indexOf("sobreCachi") > -1){
         $("#acordeon").accordion();
+    }
+
+    // Reloj
+    if(window.location.href.indexOf("horaClima") > -1){
+
+        setInterval(function(){
+            let reloj = moment().format("hh:mm:ss");
+            $("#reloj").html(reloj);
+        }, 1000)    
+       
     }
 
 });

@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!-- importacion estilos CSS -->
-        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="/css/styles.css" />
 
         <!-- importacion Bootstrap -->
         <link
@@ -16,7 +16,7 @@
             crossorigin="anonymous" />
 
         <!-- importacion JQuery -->
-        <script src="./js/resources/jquery-3.6.1.min.js"></script>
+        <script src="/js/resources/jquery-3.6.1.min.js"></script>
 
         <!-- importacion moments JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
@@ -37,82 +37,27 @@
 
                 <nav id="menu">
                     <ul>
-                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="/index.html">Inicio</a></li>
                         <li>
-                            <a href="./paginas/horaClima.html"
-                                >Horario y clima en Cachi</a
-                            >
+                            <a href="horaClima.html">Horario y clima en Cachi</a>
                         </li>
-                        <li><a href="./paginas/sobreCachi.html">Sobre mi</a></li>
+                        <li><a href="sobreCachi.html">Sobre mi</a></li>
                         <li><a href="#">Contacto</a></li>
                         <li><a href="#">Como llegar</a></li>
                     </ul>
                 </nav>
             </header>
 
-            <!-- Carrousel de imagenes con Bootstrap -->
-            <div
-                id="carouselExampleControls"
-                class="carousel slide mb-3"
-                data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img
-                            src="./img/cachi-1.jpg"
-                            class="d-block w-100"
-                            alt="cachi" />
-                    </div>
-                    <div class="carousel-item">
-                        <img
-                            src="./img/cachi-2.webp"
-                            class="d-block w-100"
-                            alt="ovnipuerto" />
-                    </div>
-                    <div class="carousel-item">
-                        <img
-                            src="./img/cachi-3.webp"
-                            class="d-block w-100"
-                            alt="cerro" />
-                    </div>
-                    <div class="carousel-item">
-                        <img
-                            src="./img/cachi-4.jpg"
-                            class="d-block w-100"
-                            alt="calles" />
-                    </div>
-                </div>
-                <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
-                    <span
-                        class="carousel-control-prev-icon"
-                        aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span
-                        class="carousel-control-next-icon"
-                        aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                </button>
-            </div>
-
             <!-- Contenido -->
             <section id="contenido">
-                <div id="articulos">
-                    <!-- Carga de articulos desde JSON -->
+                <div id="caja">
+                    <div id="reloj"></div>
                 </div>
 
                 <aside id="aside">
                     <div id="about">
                         <h4>Cabrito de la zona</h4>
-                        <img src="./img/imagen_aside.jpg" alt="cachi" />
+                        <img src="/img/imagen_aside.jpg" alt="cachi" />
                         <p></p>
                     </div>
 
@@ -146,7 +91,7 @@
         </footer>
 
         <!-- importacion mis scripts -->
-        <script src="./js/main.js"></script>
+        <script src="/js/main.js"></script>
 
         <!-- importacion JS Bootstrap -->
         <script
