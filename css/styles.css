@@ -138,7 +138,9 @@ body{
 
 form input[type="text"],
 form input[type="password"],
-form input[type="email"]{
+form input[type="email"],
+form input[type="number"],
+select{
     padding: 5px;
     border-radius: 2px;
     border: 1px solid #ccc;
@@ -154,6 +156,7 @@ form input[type="submit"]{
     border: 1px solid #ccc;
     color: #333;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 footer{
@@ -176,7 +179,7 @@ footer{
     float: right;
 }
 
-#info{
+#caja{
     width: 60%;
     float: left;
     margin-top: 60px;
@@ -198,4 +201,29 @@ footer{
     margin-top: 60px;
     margin-left: 180px;
     text-align: center;
+}
+
+.form-contacto{
+    width: 50%;
+    margin-top: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.form-contacto label{
+    width: 100%;
+    display: block;
+    margin-top: 5px;
+}
+
+.form-contacto select{
+    margin-bottom: 10px;
+}
+
+.form-error{
+    /* float: right; */
+    font-size: 12px;
+    background-color: #9e0303;
+    color: whitesmoke;
+    padding: 10px;
+    width: 100%;
 }

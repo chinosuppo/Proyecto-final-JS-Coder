@@ -104,4 +104,18 @@ $(document).ready(function(){
        
     }
 
+    //validacion de formulario
+    if(window.location.href.indexOf("contacto") > -1){
+
+        $("form input[name='fecha']").datepicker({
+            dateFormat: "dd/mm/yy"
+        });
+
+        $.validate({
+            lang: 'es',
+            errorMessagePosition: 'top',
+            scrollToTopOnError: true
+        });
+    }
+
 });

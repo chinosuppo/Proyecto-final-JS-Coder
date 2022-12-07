@@ -18,10 +18,16 @@
         <!-- importacion JQuery -->
         <script src="/js/resources/jquery-3.6.1.min.js"></script>
 
-        <!-- importacion moments JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+        <!-- importacion JQuery UI -->
+        <link rel="stylesheet" href="/js/resources/JQuery UI/jquery-ui.css" />
+        <link rel="stylesheet" href="/js/resources/JQuery UI/jquery-ui.min.css" />
+        <link
+            rel="stylesheet"
+            href="/js/resources/JQuery UI/jquery-ui.theme.min.css" />
+        <script src="/js/resources/JQuery UI/jquery-ui.min.js"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/locale/es.min.js"></script>
+        <!-- plugin de validacion de formulario -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
 
         <title>Proyecto final CoderHouse - JS</title>
     </head>
@@ -51,7 +57,49 @@
             <!-- Contenido -->
             <section id="contenido">
                 <div id="caja">
-                    <div id="reloj"></div>
+                    <!-- formulario de contacto -->
+                    <h2>Contacto</h2>
+
+                    <form action="" method="POST" class="form-contacto">
+                        <label for="nombre">Nombre</label>
+                        <input
+                            type="text"
+                            name="nombre"
+                            data-validation="alphanumeric" />
+
+                        <label for="">Apellido</label>
+                        <input
+                            type="text"
+                            name="apellido"
+                            data-validation="alphanumeric" />
+
+                        <label for="mail">Email</label>
+                        <input type="email" name="mail" data-validation="email" />
+
+                        <label for="genero">Genero</label>
+                        <select name="genero" data-validation="required">
+                            <option value="hombre">Hombre</option>
+                            <option value="mujer">Mujer</option>
+                            <option value="binario">Binario</option>
+                            <option value="no_dice">Prefiero no decirlo</option>
+                        </select>
+
+                        <label for="fecha">Fecha de nacimiento</label>
+                        <input
+                            type="text"
+                            name="fecha"
+                            data-validation="date"
+                            data-validation-format="dd/mm/yyyy" />
+
+                        <label for="edad">Edad</label>
+                        <input
+                            type="number"
+                            name="edad"
+                            data-validation="number"
+                            data-validation="range[1;100]" />
+
+                        <input type="submit" value="Enviar" />
+                    </form>
                 </div>
 
                 <aside id="aside">
