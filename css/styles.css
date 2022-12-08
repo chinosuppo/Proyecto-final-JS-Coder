@@ -191,14 +191,14 @@ footer{
 }
 
 #reloj {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #333;
     border: 5px solid #F4C114;
     width: 30%;
     float: left;
-    margin-top: 60px;
+    margin-top: 40px;
     margin-left: 180px;
     text-align: center;
 }
@@ -219,11 +219,9 @@ footer{
     margin-bottom: 10px;
 }
 
-.form-error{
-    /* float: right; */
-    font-size: 12px;
-    background-color: #9e0303;
-    color: whitesmoke;
-    padding: 10px;
-    width: 100%;
+#caja{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
 }

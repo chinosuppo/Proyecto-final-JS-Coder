@@ -94,14 +94,14 @@ $(document).ready(function(){
         $("#acordeon").accordion();
     }
 
-    // Reloj
+    // Reloj dinamico y llamada a la API para obtener el clima
     if(window.location.href.indexOf("horaClima") > -1){
 
         setInterval(function(){
-            let reloj = moment().format("hh:mm:ss");
+            let reloj = moment().format("LTS");
             $("#reloj").html(reloj);
-        }, 1000)    
-       
+        }, 1000);
+        
     }
 
     //validacion de formulario
