@@ -6,6 +6,7 @@ window.addEventListener('load',() => {
     let descripcionTemp = document.getElementById('descripcionTemp');
     let ubicacion = document.getElementById('ubicacion');
     let valorHumedad = document.getElementById('valorHumedad');
+    let icono = document.getElementById('icono');
 
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(posicion =>{
@@ -36,6 +37,27 @@ window.addEventListener('load',() => {
                     valorHumedad.textContent = `${humedad}%`;
 
                     // Hacer lo de los iconos dinamicos
+
+                    switch(data.weather[0].main){
+                        case "Clear":
+                            icono.src = '/js/resources/animated/day.svg';
+                            break;
+                        case "Clouds":
+                            icono.src = '/js/resources/animated/cloudy.svg';
+                            break;
+                        case "Thunderstorm":
+                            icono.src = '/js/resources/animated/thunder.svg';
+                            break;
+                        case "Drizzle":
+                            icono.src = '/js/resources/animated/rainy-1.svg';
+                            break;
+                        case "Rain":
+                            icono.src = '/js/resources/animated/rainy-4.svg';
+                            break;
+                        case "Snow":
+                            icono.src = '/js/resources/animated/snowy-3.svg';
+                            break;     
+                    }
                 })
                 .catch(error => {
                     console.log(error);
