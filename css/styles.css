@@ -37,6 +37,10 @@ body{
     text-transform: uppercase;
 }
 
+#contenido{
+    background: linear-gradient(90deg, #fffbab, #b59501);
+}
+
 #menu{
     font-family: Helvetica, Arial, Impact;
     background: #333;
@@ -177,6 +181,13 @@ footer{
     text-decoration: none;
     display: block;
     float: right;
+}
+
+#box{
+    width: 60%;
+    float: left;
+    margin-top: 60px;
+    margin-left: 40px;
 }
 
 #acordeon{
