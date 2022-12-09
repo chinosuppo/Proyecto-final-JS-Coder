@@ -40,22 +40,22 @@ window.addEventListener('load',() => {
 
                     switch(data.weather[0].main){
                         case "Clear":
-                            icono.src = '/js/resources/animated/day.svg';
+                            icono.src = '../js/resources/animated/day.svg';
                             break;
                         case "Clouds":
-                            icono.src = '/js/resources/animated/cloudy.svg';
+                            icono.src = '../js/resources/animated/cloudy.svg';
                             break;
                         case "Thunderstorm":
-                            icono.src = '/js/resources/animated/thunder.svg';
+                            icono.src = '../js/resources/animated/thunder.svg';
                             break;
                         case "Drizzle":
-                            icono.src = '/js/resources/animated/rainy-1.svg';
+                            icono.src = '../js/resources/animated/rainy-1.svg';
                             break;
                         case "Rain":
-                            icono.src = '/js/resources/animated/rainy-4.svg';
+                            icono.src = '../js/resources/animated/rainy-4.svg';
                             break;
                         case "Snow":
-                            icono.src = '/js/resources/animated/snowy-3.svg';
+                            icono.src = '../js/resources/animated/snowy-3.svg';
                             break;     
                     }
                 })
